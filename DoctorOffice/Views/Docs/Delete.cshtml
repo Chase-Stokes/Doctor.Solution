@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+@model DoctorOffice.Models.Doc
+
+<h4>Are you sure you want to remove this doctor?</h4>
+
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete"/>
+}
+@Html.ActionLink("Back to doctors", "Index");
