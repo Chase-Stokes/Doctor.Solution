@@ -11,7 +11,7 @@
   <h4>No patients have been added yet</h4>
 }
 <ul>
-  @foreach(Patient patient in Model)
+  @foreach (Patient patient in Model)
   {
     <li>@Html.ActionLink($"{patient.Name}", "Details", new { id = patient.PatientId })</li>
   }

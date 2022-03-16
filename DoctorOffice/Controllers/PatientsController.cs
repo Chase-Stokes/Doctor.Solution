@@ -7,10 +7,10 @@ using System.Linq;
 
 namespace DoctorOffice.Controllers
 {
-  public class PatientController : Controller
+  public class PatientsController : Controller
   {
     private readonly DoctorOfficeContext _db;
-    public PatientController(DoctorOfficeContext db)
+    public PatientsController(DoctorOfficeContext db)
     {
       _db =db;
     }
